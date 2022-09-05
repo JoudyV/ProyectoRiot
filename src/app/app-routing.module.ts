@@ -14,7 +14,15 @@ const routes: Routes = [
   {
     path: 'tablinks',
     loadChildren: () => import('./tablinks/tablinks.module').then( m => m.TablinksPageModule)
+  },  {
+    path: 'login',
+    loadChildren: () => import('./login/login.module').then( m => m.LoginPageModule)
+  },
+  {
+    path: 'inicio',
+    loadChildren: () => import('./inicio/inicio.module').then( m => m.InicioPageModule)
   }
+
 ];
 
 @NgModule({
