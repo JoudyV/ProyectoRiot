@@ -11,6 +11,14 @@ const routes: Routes = [
     redirectTo: 'home',
     pathMatch: 'full'
   },
+  {
+    path: 'tft',
+    loadChildren: () => import('./tft/tft.module').then( m => m.TFTPageModule)
+  },
+  {
+    path: 'tft',
+    loadChildren: () => import('./tft/tft.module').then( m => m.TFTPageModule)
+  },
 ];
 
 @NgModule({
