@@ -10,6 +10,10 @@ const routes: Routes = [
     path: '',
     redirectTo: 'home',
     pathMatch: 'full'
+  },
+  {
+    path: 'tablinks',
+    loadChildren: () => import('./tablinks/tablinks.module').then( m => m.TablinksPageModule)
   }
 ];
 
