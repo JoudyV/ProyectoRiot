@@ -10,6 +10,7 @@ const routes: Routes = [
     path: '',
     redirectTo: 'home',
     pathMatch: 'full'
+<<<<<<< HEAD
   },  {
     path: 'perfil',
     loadChildren: () => import('./perfil/perfil.module').then( m => m.PerfilPageModule)
@@ -18,6 +19,20 @@ const routes: Routes = [
     path: 'valorant',
     loadChildren: () => import('./valorant/valorant.module').then( m => m.ValorantPageModule)
   },
+=======
+  },
+  {
+    path: 'tablinks',
+    loadChildren: () => import('./tablinks/tablinks.module').then( m => m.TablinksPageModule)
+  },  {
+    path: 'login',
+    loadChildren: () => import('./login/login.module').then( m => m.LoginPageModule)
+  },
+  {
+    path: 'inicio',
+    loadChildren: () => import('./inicio/inicio.module').then( m => m.InicioPageModule)
+  }
+>>>>>>> c8e713832c9bab809535f43a69524b4a30142f27
 
 ];
 
